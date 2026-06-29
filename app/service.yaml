@@ -1,12 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: { { .Release.Name } }
-
+  name: demo-app
 spec:
   selector:
-    app: { { .Release.Name } }
-
+    app: demo-app
   ports:
     - port: 80
       targetPort: 80
